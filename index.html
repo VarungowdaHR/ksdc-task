@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do game</title>
+    <link rel="icon" type="image/jpg" href="favicon\Scenery.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet", href="styles.css">
+
+</head>
+<body>
+
+    <!-- header -->
+    <div class="header">
+        <h2>To Do game</h2>
+    </div>
+    
+    <div class="form">
+        <form>
+            <input type="text" id="input" value="" placeholder="Enter here..." autofocus>
+            <input type="button" value="ADD" onclick=add()>
+        </form>
+        <div id="message">
+        </div>
+    </div>
+    
+    
+    <!-- end of header -->
+    <!-- to do list -->
+    <div class="list-container">
+        <div class="list-item">
+            <h6 id="list-data">Task</h6>
+            <h6 id="list-completed">Completed</h6>
+            <h6 id="list-remove">Remove</h6>
+        </div>
+    </div>
+    <!-- todo list end -->
+    <div class="footer">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
